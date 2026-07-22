@@ -1,0 +1,182 @@
+/* ==========================
+   HJR Transformadores
+========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f7fb;
+color:#333;
+line-height:1.7;
+}
+
+header{
+background:#003366;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+.logo h1{
+color:white;
+font-size:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00bfff;
+}
+
+.banner{
+height:85vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+background:linear-gradient(rgba(0,40,80,.75),rgba(0,40,80,.75)),
+url("https://images.unsplash.com/photo-1509395176047-4a66953fd231?w=1600") center/cover;
+color:white;
+}
+
+.banner h2{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.banner p{
+font-size:22px;
+max-width:800px;
+}
+
+.botao{
+margin-top:35px;
+padding:15px 35px;
+background:#00bfff;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+transition:.3s;
+}
+
+.botao:hover{
+background:#008ecc;
+transform:scale(1.05);
+}
+
+section{
+padding:80px 10%;
+}
+
+section h2{
+color:#003366;
+font-size:38px;
+margin-bottom:25px;
+text-align:center;
+}
+
+section p{
+font-size:18px;
+text-align:justify;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:20px;
+color:#003366;
+}
+
+.card p{
+padding:0 20px 25px;
+}
+
+ul{
+margin-top:20px;
+margin-left:25px;
+font-size:18px;
+}
+
+footer{
+background:#003366;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:60px;
+}
+
+footer p{
+font-size:16px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:20px;
+}
+
+nav a{
+display:block;
+margin:10px 0;
+}
+
+.banner h2{
+font-size:38px;
+}
+
+.banner p{
+font-size:18px;
+}
+
+section{
+padding:60px 7%;
+}
+
+}
