@@ -180,3 +180,19 @@ padding:60px 7%;
 }
 
 }
+.card p,
+#empresa p,
+#historia p,
+section p {
+    text-align: justify;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .card p,
+    #empresa p,
+    #historia p,
+    section p {
+        text-align: left;
+    }
+}
